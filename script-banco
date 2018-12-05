@@ -2,14 +2,14 @@ create table Vendas (
 	codigo int primary key,
 	data Date not null,
 	valor_total float not null,
-	cpf_vendedor int char(11) not null unique
+	cpf_vendedor char(11) not null unique
 );
 create table Produtos (
 	codigo int primary key,
-	nome unique not null,
+	nome varchar(55) not null UNIQUE,
 	quant_estoque int not null,
 	preco float not null
-)
+);
 create table Itens_Venda(
 	codVendas int,
 	codProdutos int,
