@@ -1,0 +1,23 @@
+Questão 01
+(a) Errado, a escabilidade se dá ao fato dos bancos NoSQL serem distribuidos.
+
+(b) Correto, por possuir um esquema flexível, tendo seus dados semi-estruturados o deixa com um bom desempenho
+
+(c) Correto, a abordagem de mestre-escravo é uma abordagem em que a escrita só pode ser realizada no mestre, enquanto os escravos só podem realizar a leitura, deixando a consulta mais rápida mas não garantindo consistencia.
+
+(d) Não, o termo NoSQL não significa que n]ao há a utilização de SQL, o termo se refere a não somente sql, portanto pode sim, estar vunerável a ataques de sql injection
+
+(e) Errado, bancos NoSQL existem esquemas, eles só são flexíveis, você consegue sim criar um índice em cima de seus atributos e chave "primaria".
+
+
+Questão 02
+b) Map/Reduce;
+
+Questão 03
+d) volume + variedade + velocidade + veracidade, tudo agregando + valor.
+
+Questão 04
+b) Valor corresponde à grande quantidade de dados acumulada.
+
+Questão 05
+
