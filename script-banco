@@ -1,0 +1,20 @@
+create table Vendas (
+	codigo int primary key,
+	data Date not null,
+	valor_total float not null,
+	cpf_vendedor int char(11) not null unique
+);
+create table Produtos (
+	codigo int primary key,
+	nome unique not null,
+	quant_estoque int not null,
+	preco float not null
+)
+create table Itens_Venda(
+	codVendas int,
+	codProdutos int,
+	quantidade int not null,
+	primary key (codVendas, codProdutos),
+	foreign key (codVendas) references Vendas(codigo),
+	foreign key (CodProdutos) references Produtos(codigo)
+);
