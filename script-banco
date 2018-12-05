@@ -1,6 +1,6 @@
 create table Vendas (
 	codigo int primary key,
-	data Date not null,
+	data varchar(30) not null,
 	valor_total float not null,
 	cpf_vendedor char(11) not null unique
 );
