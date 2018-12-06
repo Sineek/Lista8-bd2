@@ -20,4 +20,78 @@ Questão 04
 b) Valor corresponde à grande quantidade de dados acumulada.
 
 Questão 05
+Como a principal consulta será os posts, o modeol agregado deverá ser algo semelhante a isso:
+
+[POSTS]
+id:int(11)
+author_id:int(11)
+title:varchar(255)
+url:text
+vote_count:smallint(5)
+
+  [COMMENTS - ARRAY DE OBJETO]
+  id:int(11)
+  post_id:int(11)
+  user_ud:int(11)
+  text:text
+  
+  [IMAGES - ARRAY DE OBJETO]
+  id:int(11)
+  post_id:int(11)
+  caption:int(11)
+  type:varchar(255)
+  size:mediumint(8)
+  location:varchar(255)
+  
+  [POSTS_TAGS - ARRAY DE OBJETO]
+  id:int(11)
+  post_id:int(11)
+  tag_id:int(11)
+  
+    [TAGS - ARRAY DE OBJETO]
+    id:int(11)
+    text:varchar(255)
+    
+Questão 6
+a) 
+{
+  "posts": {},
+  "id": {},
+  "author_id": {},
+  "title": {},
+  "url": {},
+  "vote_count": {},
+  "comments": {
+    "id": {},
+    "post_id": {},
+    "user_ud": {},
+    "text": {},
+    "": {}
+  },
+  "images": {
+    "id": {},
+    "post_id": {},
+    "caption": {},
+    "type": {},
+    "size": {},
+    "location": {},
+    "": {}
+  },
+  "posts_tags": {
+    "id": {},
+    "post_id": {},
+    "tag_id": {},
+    "": {}
+  },
+  "tags": {},
+  "text": {}
+}
+b)
+db.collection.update({} , {data : "teste"}, {upsert : true})
+c)
+db.colletion.find({_id:0, comments:1},{});
+
+Questão 7
+A imagem trata, primeiramente dos três primeiros V de big data, a velocidade em que os dados são obtidos e gerados, o volume dos dados, e a variedade deste dado, seguido por hardware, softwares e serviços que, com o passar dos anos, foram aprimorados e por conta dessa melhoria fomos capazes de aprofundar na ideia do big data, e por fim os algoritmos utilizados para tratar esse massivo conjunto de dados, que vão desde de técnicas de IA até mesmo na busca de dados por sensores
+
 
